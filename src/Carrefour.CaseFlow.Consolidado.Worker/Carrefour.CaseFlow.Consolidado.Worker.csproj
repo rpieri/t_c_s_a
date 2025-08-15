@@ -25,4 +25,12 @@
       <ProjectReference Include="..\Carrefour.CaseFlow.Shared.Events\Carrefour.CaseFlow.Shared.Events.csproj" />
       <ProjectReference Include="..\Carrefour.CaseFlow.Shared.Kafka\Carrefour.CaseFlow.Shared.Kafka.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Workers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Workers\Worker.cs" />
+    </ItemGroup>
 </Project>

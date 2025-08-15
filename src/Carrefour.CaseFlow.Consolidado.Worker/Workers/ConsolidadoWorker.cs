@@ -3,10 +3,10 @@ using Carrefour.CaseFlow.Consolidado.Service.Services;
 using Carrefour.CaseFlow.Shared.Events;
 using Confluent.Kafka;
 
-namespace Carrefour.CaseFlow.Consolidado.Worker;
+namespace Carrefour.CaseFlow.Consolidado.Worker.Workers;
 
-public class Worker(IConsumer<string, string> consumer, 
-    IServiceProvider serviceProvider,ILogger<Worker> logger) : BackgroundService
+public class ConsolidadoWorker(IConsumer<string, string> consumer, 
+    IServiceProvider serviceProvider,ILogger<ConsolidadoWorker> logger) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {

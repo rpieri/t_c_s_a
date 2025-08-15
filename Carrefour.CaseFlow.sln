@@ -34,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Worker", "Worker", "{67ABD9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrefour.CaseFlow.Consolidado.Worker", "src\Carrefour.CaseFlow.Consolidado.Worker\Carrefour.CaseFlow.Consolidado.Worker.csproj", "{2072C57C-2C91-48F0-9B29-9D1F832DAEA3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4D95900C-F2F6-4B41-A4AE-BC4E08584E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrefour.CaseFlow.Consolidado.Tests", "test\Carrefour.CaseFlow.Consolidado.Tests\Carrefour.CaseFlow.Consolidado.Tests.csproj", "{F145B6C4-95CC-40F8-A7C1-05C2E189C418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +84,10 @@ Global
 		{2072C57C-2C91-48F0-9B29-9D1F832DAEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2072C57C-2C91-48F0-9B29-9D1F832DAEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2072C57C-2C91-48F0-9B29-9D1F832DAEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F145B6C4-95CC-40F8-A7C1-05C2E189C418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F145B6C4-95CC-40F8-A7C1-05C2E189C418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F145B6C4-95CC-40F8-A7C1-05C2E189C418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F145B6C4-95CC-40F8-A7C1-05C2E189C418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FEB0D72-9A69-4B74-A04D-91F7FBCAD6E9} = {DAB4C6D6-22C5-44CB-9018-00911596D613}
@@ -92,5 +100,6 @@ Global
 		{11F76DF3-897A-4870-ABEC-FF1AFB8195F4} = {73B1D9CA-137B-434B-BE2F-1A6C170DFB5A}
 		{E460F602-32CB-42ED-AE27-16767042910B} = {40702337-0E85-44CF-89B1-F966C4D258BB}
 		{2072C57C-2C91-48F0-9B29-9D1F832DAEA3} = {67ABD9A6-4262-4E56-9A3E-528C70EEF19F}
+		{F145B6C4-95CC-40F8-A7C1-05C2E189C418} = {4D95900C-F2F6-4B41-A4AE-BC4E08584E6F}
 	EndGlobalSection
 EndGlobal

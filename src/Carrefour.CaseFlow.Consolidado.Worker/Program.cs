@@ -1,6 +1,7 @@
 using Carrefour.CaseFlow.Consolidado.Service.Data;
 using Carrefour.CaseFlow.Consolidado.Service.Services;
 using Carrefour.CaseFlow.Consolidado.Worker;
+using Carrefour.CaseFlow.Consolidado.Worker.Workers;
 using Carrefour.CaseFlow.Shared.Kafka.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -35,7 +36,7 @@ builder.Services.AddKafkaConsumer(builder.Configuration, "consolidado-service");
 builder.Services.AddScoped<IConsolidacaoService, ConsolidacaoService>();
 
 
-builder.Services.AddHostedService<Worker>();
+builder.Services.AddHostedService<ConsolidadoWorker>();
 
 var host = builder.Build();
 
