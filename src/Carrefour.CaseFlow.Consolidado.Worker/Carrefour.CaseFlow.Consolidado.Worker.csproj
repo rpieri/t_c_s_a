@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Carrefour.CaseFlow.Consolidado.Worker-b1e89c98-0b3d-4f63-88a9-4e6da7b5a123</UserSecretsId>
+    </PropertyGroup>
+    
+    
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0" />
+        <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+        <PackageReference Include="Dapper" Version="2.1.35" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Carrefour.CaseFlow.Consolidado.Domain\Carrefour.CaseFlow.Consolidado.Domain.csproj" />
+      <ProjectReference Include="..\Carrefour.CaseFlow.Consolidado.Service\Carrefour.CaseFlow.Consolidado.Service.csproj" />
+      <ProjectReference Include="..\Carrefour.CaseFlow.Shared.Events\Carrefour.CaseFlow.Shared.Events.csproj" />
+      <ProjectReference Include="..\Carrefour.CaseFlow.Shared.Kafka\Carrefour.CaseFlow.Shared.Kafka.csproj" />
+    </ItemGroup>
+</Project>
